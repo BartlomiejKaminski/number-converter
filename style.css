@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');
+
+.widget{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0d1137;
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 5px solid #e52155;
+}
+
+#topic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 5px solid #ffffff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.widget-inputs{
+    background-color: #e52155;
+    width: 80%;
+    height: 70%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-bottom: none;
+    justify-content: space-evenly;
+}
+
+.widget-output{
+    background-color: #e52155;
+    height: 15%;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid white;
+    border-top: none;
+}
+
+.widget-inputs-upper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60%;
+}
+
+.widget-inputs-button{
+    height: 20%;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.btn:hover{
+    transform: scale(0.9);
+    transition: all 0.8s;
+}
+
+.widget-inputs-button > button {
+    background-color: #0d1137;
+    color: beige;
+    border-radius: 15px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    border: 2px solid;
+    width: 35%;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.widget-inputs-upper > div {
+    flex-direction: column;
+    width: 50%;
+}
+
+.widget-inputs-upper > div > div > select {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: large;
+    width: 85%;
+}
+
+.widget-inputs-upper > div > input{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: large;
+    width: 80%;
+
+}
+
+.widget-inputs-upper > div > p {
+    text-align: center;
+    color: #040727;
+    font-size: large;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.widget-output{
+    display: flex;
+    justify-content: center;
+}
+
+#output {
+    background-color: beige;
+    font-size: large;
+    color: #080d3f;
+    text-align: center;
+    width:50%;
+    border: 2px solid #0d1137;
+    border-radius: 5px; 
+}
+
+#systems-from{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#systems-to{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#base-number{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#output{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media ( max-width: 400px){
+    #output{
+        width: 90%;
+    }
+}
+
+@media ( max-width: 1150px){
+    .widget{
+        width: 40%;
+    }
+}
+
+@media ( max-width: 960px){
+    .widget{
+        width: 50%;
+    }
+}
+
+@media ( max-width: 612px){
+    .widget{
+        width: 70%;
+    }
+    #button{
+        width: 80%;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Widget Starts -->
+
+    <div class="widget">
+        <div class="widget-inputs">
+            <div id="topic">NUMBER BASE CONVERTER</div>
+            <div class="widget-inputs-upper">       
+                <div>
+                    <p>From:</p>
+                    <p>To:</p>
+                    <p>Number:</p>
+                </div>
+                <div>
+                    <div>
+                        <select id="systems-from">
+                            <option value="none" disabled selected>Choose base</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="16">16</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select id="systems-to">
+                            <option value="none" disabled selected>Choose base</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="12">12</option>
+                            <option value="16">16</option>
+                        </select>
+                    </div>
+                    <input type="text" id="base-number" value="" onkeypress="return alpha(event)">
+                </div>
+            </div>
+            <div class="widget-inputs-button">
+                <button class="btn" id="button">CONVERT</button>
+                <button class="btn" id="buttonReset">CLEAR</button>
+            </div>
+        </div>
+        <div class="widget-output">
+            <p id="output"></p>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+    <!-- Widget Ends-->
+</body>
+</html>
